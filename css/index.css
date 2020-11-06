@@ -14,7 +14,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {  
 margin: 0;  
 padding: 0;  
-border: 1px solid red;  
+border: 0;  
 font-size: 100%;  
 font: inherit;  
 vertical-align: baseline;  
@@ -139,7 +139,9 @@ button:hover{
 /* styles for 500px */
 
 @media(max-width:500px){
-
+body{
+    line-height: normal;
+}
 header{
     width: 100%;
     padding:10px;
@@ -148,7 +150,7 @@ header{
     
 }
 nav{
-    width:100%;
+    width:60%;
     display:flex;
     justify-content:space-evenly;
     margin-top:5%;
@@ -167,6 +169,7 @@ nav span{
     flex-wrap: wrap;
     justify-content: center;
     
+    
 }
 .title-container div {	
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg');		
@@ -178,7 +181,8 @@ nav span{
     justify-content: center;
     align-items: center;
     height:60vh;
-    
+    margin: 0 auto;
+    margin-bottom: 5%;
     
 }
 h1{
@@ -211,18 +215,25 @@ button:hover{
     justify-content: space-around;
     align-items: center;
     width:100%;
-    margin:0 auto;
-}
+    margin:5% auto;
+    }
 
 .artist{
     width:70%;
     text-align:center;
 
-}
+    }
 .artist img{
     width:90%;
     height: 20vh;
-}
+    margin: 5% auto;
+    }
 .bio {
-    font-size: 1rem;
+    font-size: 1.3rem;
+    margin: 10% auto;
+    }
+.artist a{
+    font-size: 2rem;
+    
+}    
 }
